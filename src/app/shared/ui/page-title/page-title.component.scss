@@ -1,0 +1,10 @@
+@import '../../../../assets/scss/common/_variables';
+
+:host {
+    display: block;
+    margin: $offset-lg 0;
+    color: inherit;
+}
+.page-title {
+    font-size: $font-size-lg;
+}

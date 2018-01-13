@@ -1,0 +1,33 @@
+@import '../../../assets/scss/common/_variables';
+
+:host {
+    width: 100%;
+    margin: $offset-xl 0;
+}
+
+.signup {
+    &__button {
+
+    }
+}
+
+.form {
+    &_field {
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+        & .form_group {
+            width: 48%;
+        }
+    }
+    &_group {
+        
+    }
+    &_action {
+        margin: $offset-lg 0;
+    }
+}
+
+.button {
+
+}

@@ -1,0 +1,48 @@
+@import '../../../../assets/scss/common/_variables';
+
+
+:host {
+    width: 100%;
+    position: relative;
+    display: block;
+    margin: $offset-md 0;
+    
+    & .form_label {
+        color: $dark-color;
+        font-size: $font-size-sm;
+        font-weight: 400;
+        transition: all $animation-fast;
+    }
+
+    &.form_control__fill,
+    &.form_control__focus {
+        & .form_field input {
+        }
+        & .form_label {
+        }
+    }
+}
+
+
+.form_field {
+    width: 100%;
+    position: relative;
+    display: block;
+    & input {
+        border: none;
+        background-color: $white-color;
+        font-size: $font-size-md;
+        font-weight: 300;
+        width: 100%;
+        display: block;
+        padding: $offset-sm;
+        box-sizing: border-box;
+        margin: $offset-md 0 $offset-sm;
+        color: $dark-color;
+    }
+}
+.form_control {
+    
+}
+
+

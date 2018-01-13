@@ -1,0 +1,11 @@
+<label class="form_field">
+  <span class="form_label">{{ label }}</span>
+  <input #input 
+         [value]="value"
+         [attr.type]="type"
+         (input)="onInput($event)"/>
+  <span class="form_message">{{ message }}</span>
+  <div class="form_button">
+      <ng-content></ng-content>
+  </div>
+</label>

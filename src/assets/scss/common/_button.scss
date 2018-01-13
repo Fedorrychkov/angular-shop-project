@@ -1,0 +1,14 @@
+.button {
+    background-color: $white-color;
+    border: none;
+    color: $dark-color;
+    font-size: $font-size-md;
+    font-weight: bold;
+    padding: $offset-sm $offset-md;
+    cursor: pointer;
+    transition: all $animation-fast;
+    &:hover {
+        background-color: $dark-color;
+        color: $white-color;
+    }
+}

@@ -1,0 +1,61 @@
+<app-page-title title="Регистрация"></app-page-title>
+
+<form novalidate
+      class="form_content"
+      [formGroup]="AuthForm"
+      (submit)="formSubmit(AuthForm.value, AuthForm.valid)">
+        
+    <div class="form_field">
+        <div class="form_group">
+            <app-form-control type="text"
+              formControlName="firstName"
+              label="Введите Имя"
+              [message]=""
+              (input)="checkInput()"></app-form-control>
+        </div>
+        <div class="form_group">
+            <app-form-control type="text"
+              formControlName="lastName"
+              label="Введите Фамилию"
+              [message]=""
+              (input)="checkInput()"></app-form-control>
+        </div>
+    </div>
+    <div class="form_field">
+        <div class="form_group">
+            <app-form-control type="text"
+              formControlName="username"
+              label="Логин"
+              [message]="loginErrorMessage"
+              (input)="checkInput()"></app-form-control>
+        </div>
+        <div class="form_group">
+            <app-form-control type="text"
+              formControlName="email"
+              label="Введите E-mail"
+              [message]="emailErrorMessage"
+              (input)="checkInput()"></app-form-control>
+        </div>
+    </div>
+    <div class="form_field"> 
+        <div class="form_group">
+          <app-form-control type="password"
+            formControlName="password"
+            label="Пароль"
+            [message]="passErrorMessage"
+            (input)="checkInput()"></app-form-control>
+        </div>
+        <div class="form_group">
+          <app-form-control type="cpassword"
+            formControlName="cpassword"
+            label="Повторите пароль"
+            [message]="cpassErrorMessage"
+            (input)="checkInput()"></app-form-control>
+        </div>
+    </div>
+  <div class="form_action">
+    <button class="button button__primary signup__button">
+        <span class="button_label">Зарегистрироваться</span>
+    </button>
+  </div>
+</form>

@@ -1,0 +1,17 @@
+@import './common/_variables';
+@import './common/_reset';
+@import './common/_button';
+@import './common/_table';
+
+.wrapper {
+    max-width: $screen-xl;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: $screen-xl) {
+    .wrapper {
+        width: 90%;
+    }
+}

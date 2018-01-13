@@ -1,0 +1,38 @@
+@import '../../assets/scss/common/_variables';
+
+:host {
+    margin: 0;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: $blue-color;
+    color: $content-color;
+}
+
+.auth {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.header {
+    padding: $offset-lg 0;
+    &__logo {
+        font-size: $font-size-lg;
+    }
+}
+
+.content {
+    display: block;
+    height: 100%;
+    &__body {
+        height: inherit;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+}
