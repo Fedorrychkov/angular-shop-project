@@ -1,14 +1,29 @@
 .button {
-    background-color: $white-color;
+    background-color: $gray-color;
     border: none;
-    color: $dark-color;
-    font-size: $font-size-md;
-    font-weight: bold;
-    padding: $offset-sm $offset-md;
+    color: $white-color;
+    font-size: $font-size-base;
+    padding: $offset-md $offset-lg;
+    box-sizing: border-box;
     cursor: pointer;
     transition: all $animation-fast;
+    font-weight: 500;
+    border-radius: 5px;
     &:hover {
         background-color: $dark-color;
         color: $white-color;
+    }
+
+    &__error {
+        background-color: $red-color;
+        &:hover {
+            background-color: $red-color-light;
+        }
+    }
+    &__normal {
+        background-color: $darker-color;
+        &:hover {
+            background-color: $dark-color;
+        }
     }
 }

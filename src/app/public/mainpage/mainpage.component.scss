@@ -1,0 +1,15 @@
+@import '../../../assets/scss/common/_variables';
+:host {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.mainpage {
+    &__white {
+        background-color: $white-color;
+    }
+    &__smoke {
+        background-color: $smoke-color;
+    }
+}

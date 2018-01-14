@@ -11,8 +11,9 @@ import { DateformatPipe } from '../pipes/dateformat.pipe';
 import { FormControlComponent,
          PageTitleComponent
         } from './ui';
-// import { HistoryInfoComponent } from './ui/history-info/history-info.component';
-// import { PageTitleComponent } from './ui/page-title/page-title.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { CatalogComponent } from './navbar/catalog/catalog.component';
+import { HeroslideComponent } from './heroslide/heroslide.component';
 
 @NgModule({
     imports: [
@@ -25,14 +26,19 @@ import { FormControlComponent,
     exports: [
         DateformatPipe,
         FormControlComponent,
-        PageTitleComponent
+        PageTitleComponent,
+        NavbarComponent,
+        HeroslideComponent
     ],
     providers: [
     ],
     declarations: [
         DateformatPipe,
         FormControlComponent,
-        PageTitleComponent
+        PageTitleComponent,
+        NavbarComponent,
+        CatalogComponent,
+        HeroslideComponent
     ]
 })
 export class SharedModule { }
