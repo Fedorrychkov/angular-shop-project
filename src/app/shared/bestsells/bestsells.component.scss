@@ -1,0 +1,95 @@
+@import '../../../assets/scss/common/_variables';
+
+:host {
+    padding: $offset-md 0;
+}
+
+.bestsells {
+    padding: $offset-lg 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    &__article {
+        width: 23%;
+        display: block;
+    }
+    &__preview {
+        & img {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    &__body {
+    }
+    &__title {
+        font-size: $font-size-sm;
+        padding: $offset-md 0;
+        & a {
+            color: $darkest-color;
+            text-decoration: none;
+            &:hover {
+                color: $dark-color;
+            }
+        }
+    }
+    &__desc {
+        &_item {
+            box-sizing: border-box;
+            padding: $offset-sm $offset-lg;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &:nth-child(2n-1) {
+                background-color: $smoke-color;
+            }
+            &-title {
+                width: 70%;
+            }
+            &-count {
+                width: 30%;
+                text-align: right;
+            }
+        }
+    }
+    &__control {
+        padding: $offset-md 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__price {
+        display: block;
+        font-size: $font-size-sm;
+        font-weight: bold;
+        & span {
+            font-weight: normal;
+        }
+    }
+    &__cart {
+        & button {
+            display: block;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            & img {
+                max-width: 28px;
+                width: 100%;
+                display: block;
+                margin-right: $offset-sm;
+            }
+        }
+    }
+    &__currency {
+
+    }
+    &__comparsion {
+        display: inline-block;
+        cursor: pointer;
+        padding: $offset-sm 0 0;
+        border-bottom: 1px solid $darker-color;
+        color: $darker-color;
+    }
+}

@@ -6,6 +6,9 @@
 }
 
 .mainpage {
+    display: block;
+    width: 100%;
+    margin: auto;
     &__white {
         background-color: $white-color;
     }
