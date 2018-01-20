@@ -1,0 +1,46 @@
+@import '../../../assets/scss/common/_variables';
+
+:host {
+    display: block;
+    width: 100%;
+}
+.footer {
+    &__top {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: $offset-xl 0 $gap-mc;
+    }
+    &__list {
+        // width: 20%;
+        margin-right: $offset-xl;
+        &-item {
+
+        }
+        &-link {
+            display: block;
+            text-decoration: none;
+            color: $dark-color;
+            font-size: $font-size-sm*.8;
+            margin: $offset-mc 0;
+            &:hover {
+                color: $gray-color;
+            }
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: $light-color;
+        background-color: $darker-color;
+        padding: $offset-xl 0 $offset-lg;
+        &-left {
+            max-width: 60%;
+            display: block;
+        }
+        &-right {
+
+        }
+    }
+}

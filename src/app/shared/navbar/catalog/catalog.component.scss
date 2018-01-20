@@ -29,28 +29,36 @@
         background-color: $white-color;
         width: 100%;
         padding: 0;
-        margin: $offset-lg 0 0;
+        margin: $offset-sm 0 0;
         border-radius: 5px;
+        z-index: 9;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .2);
         & li {
-
+            &:nth-last-child() {
+                border-bottom: 1px solid $lightest-color;
+                border-radius: 5px;
+            }
         }
         & a {
             padding: $offset-sm $offset-lg;
             color: $dark-color;
             text-decoration: none;
-            border-bottom: 1px solid $lightest-color;
             font-size: $font-size-base*.9;
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            border-radius: 5px;
+            &:hover {
+                background-color: $smoke-color;
+            }
             & div {
              max-width: 30px;
              width: 100%;   
              display: block;
              margin-right: $offset-lg;
              & img {
-                 display: block;
-                 margin: 0;
+                display: block;
+                margin: 0;
              }
             }
             & span {
@@ -60,9 +68,6 @@
                 & b {
                     color: $light-color;
                 }
-            }
-            &:hover {
-                background-color: $smoke-color;
             }
         }
     }

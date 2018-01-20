@@ -13,9 +13,15 @@
     &__article {
         width: 23%;
         display: block;
+        &:hover {
+            & .bestsells__preview img {
+                transform: scale(1.02);
+            }
+        }
     }
     &__preview {
         & img {
+            transition: all $animation-fast;
             margin: 0 auto;
             display: block;
         }
