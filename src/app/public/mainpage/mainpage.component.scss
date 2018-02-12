@@ -5,18 +5,6 @@
     position: relative;
 }
 
-.mainpage {
-    display: block;
-    width: 100%;
-    margin: auto;
-    &__white {
-        background-color: $white-color;
-    }
-    &__smoke {
-        background-color: $smoke-color;
-    }
-}
-
 .something {
     padding: 0 0 $offset-lg;
     & p {

@@ -26,13 +26,13 @@
         </div>
         <div class="header__right-middle">
           
-          <div class="location">Ваш город: 
+          <!-- <div class="location">Ваш город: 
             <div class="location__point">Казань 
               <span class="location__icon"> 
                 <img src="../../../assets/icons/down-arrow.svg" alt="">
               </span>
             </div>
-          </div>
+          </div> -->
           
           <div class="cart">
             <div class="cart__icon">
@@ -44,14 +44,13 @@
         <div class="header__right-bottom">
           <nav class="nav">
             <ul class="nav__list">
-              <li *ngFor="let item of nav"  class="nav__item">
+              <li *ngFor="let item of nav" class="nav__item">
                 <ng-container>
                     <a [routerLink]="item.link"
                         routerLinkActive="nav__link--active"
-                        class="nav__link">
-                        <!-- <icon name="{{ item.icon }}">
-                        </icon> -->
-                        <span class="nav__link-title">{{ item.title }} <b>{{ item.count }}</b></span>
+                        class="nav__link"
+                        (click)="click()">
+                        <span class="nav__link-title">{{ item.title }}</span>
                     </a>
                 </ng-container>
               </li>

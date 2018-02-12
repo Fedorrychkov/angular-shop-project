@@ -31,7 +31,8 @@ import { ConfirmService } from './service/confirm.service';
     FormsModule,
     RouterModule,
     AppRoutingModule,
-    TranslateModule
+    TranslateModule,
+    BrowserAnimationsModule
   ],
   providers: [
     StorageService,

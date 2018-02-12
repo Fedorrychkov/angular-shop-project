@@ -114,6 +114,12 @@
         &:hover {
             color: $gray-color;
         }
+        &--active {
+            color: $red-color;
+            &:hover {
+                color: $red-color;
+            }
+        }
     }
 }
 

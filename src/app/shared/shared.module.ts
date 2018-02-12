@@ -16,6 +16,7 @@ import { CatalogComponent } from './navbar/catalog/catalog.component';
 import { HeroslideComponent } from './heroslide/heroslide.component';
 import { BestsellsComponent } from './bestsells/bestsells.component';
 import { FooterComponent } from './footer/footer.component';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 
 @NgModule({
     imports: [
@@ -32,7 +33,8 @@ import { FooterComponent } from './footer/footer.component';
         NavbarComponent,
         HeroslideComponent,
         BestsellsComponent,
-        FooterComponent
+        FooterComponent,
+        BreadcrumbsComponent
     ],
     providers: [
     ],
@@ -44,7 +46,8 @@ import { FooterComponent } from './footer/footer.component';
         CatalogComponent,
         HeroslideComponent,
         BestsellsComponent,
-        FooterComponent
+        FooterComponent,
+        BreadcrumbsComponent
     ]
 })
 export class SharedModule { }

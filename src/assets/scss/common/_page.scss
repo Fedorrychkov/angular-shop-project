@@ -1,0 +1,33 @@
+@import './_variables';
+
+.page {
+    display: block;
+    width: 100%;
+    margin: auto;
+    &__white {
+        background-color: $white-color;
+    }
+    &__smoke {
+        background-color: $smoke-color;
+    }
+    &__content {
+        line-height: 1.35;
+        padding: 0 0 $offset-lg;
+        & p {
+            margin: $offset-sm 0;
+        }
+    }
+    &__preview {
+        margin: $offset-lg 0;
+        height: 380px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+         & img {
+            width: 100%;
+            height: auto;
+            display: block; 
+        }
+    } 
+}

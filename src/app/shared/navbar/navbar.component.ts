@@ -9,29 +9,31 @@ export class NavbarComponent implements OnInit {
   public nav: Object;
   constructor() {
     this.nav = [
-      {
-          link: '1',
-          title: 'О бренде Starmix',
-      },
-      {
-          link: '2',
-          title: 'Доставка и оплата',
-      },
-      {
-          link: '3',
-          title: 'Гарантия и сервис',
-      },
-      {
-          link: '4',
-          title: 'Новости и видео',
-      },
-      {
-          link: '5',
-          title: 'Контакты',
-      }
+        {
+            link: '/about',
+            title: 'О бренде Starmix',
+        },
+        {
+            link: '/payments',
+            title: 'Доставка и оплата',
+        },
+        {
+            link: '/waranty',
+            title: 'Гарантия и сервис',
+        },
+        {
+            link: '/news',
+            title: 'Новости и видео',
+        },
+        {
+            link: '/contacts',
+            title: 'Контакты',
+        }
     ];
   }
-
+    click(e) {
+        console.log('click');
+    }
   ngOnInit() {
   }
 

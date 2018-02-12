@@ -7,5 +7,5 @@ export const environment = {
   production: false,
   env: 'dev',
   langList: ['ru', 'en'],
-  apiUrl: 'http://localhost:8080/'
+  apiUrl: 'http://localhost:50656/api/'
 };

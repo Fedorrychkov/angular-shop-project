@@ -1,9 +1,11 @@
-<div class="catalog">
+<div class="catalog" (mouseenter)="fade()" (mouseleave)="fade()">
+        <!-- changeVisible(isCatalog) -->
   <div class="catalog__title">Каталог товаров</div>
-  <ul class="catalog__list">
+  <ul class="catalog__list" [@fade]='state'>
+        <!-- [hidden]="!isCatalog" -->
       <li *ngFor="let item of catalog"  class="catalog__item">
         <ng-container>
-            <a [routerLink]="item.link"
+            <a  [routerLink]="item.link"
                 routerLinkActive="catalog__link--active"
                 class="catalog__link">
                 <div><img src="{{ item.icon }}" /></div>

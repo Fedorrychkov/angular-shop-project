@@ -18,6 +18,8 @@
         box-sizing: border-box;
         cursor: pointer;
         animation: all $animation-fast;
+        position: relative;
+        z-index: 11;
         &:hover {
             background-color: $dark-color;
         }
@@ -29,7 +31,8 @@
         background-color: $white-color;
         width: 100%;
         padding: 0;
-        margin: $offset-sm 0 0;
+        // margin: $offset-sm 0 0;
+        transform: translateY(10px);
         border-radius: 5px;
         z-index: 9;
         box-shadow: 0 0 5px rgba(0, 0, 0, .2);
